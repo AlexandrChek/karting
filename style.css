@@ -157,6 +157,7 @@ a:active img.recall-button {
     line-height: 19px;
     color: #FFFFFF;
     opacity: 0.6;
+    margin-left: 3%;
 }
 
 .box {
@@ -218,6 +219,9 @@ a:active img.recall-button {
         width: 11%;
         left: 3%;
     }
+    .phrase {
+        margin-left: 0%;
+    }
 }
 
 @media (max-width: 990px) {
@@ -277,6 +281,11 @@ a:active img.recall-button {
     .large-contacts-active {
         width: 90%;
     }
+    .phrase {
+        font-size: 15px;
+        line-height: 18px;
+    }
+    
 }
 
 @media (max-width: 625px) {
@@ -363,6 +372,6 @@ a:active img.recall-button {
         left: 3%;
     }
     .items {
-        padding-right: 25px;
+        padding-right: 20px;
     }
 }
