@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="E:\Саша\Фронт-енд\Авада-5\style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <title>BKC</title>
+</head>
+<body>
+    <div id="karting">
+        <div class="header">
+            <img class="logo" v-bind:src="logo" alt="Logo">
+            <nav>
+                <ul>
+                    <li class="items" v-for="(item, index) in menu">
+                        <a href="#" class="links" v-bind:class="{'first-item': index === 0}">{{item}}</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+            <div class="main-section">
+                <img class="main" v-bind:src="main" alt="Main info">
+                <a href="#">
+                    <img class="button-get-started" v-bind:src="buttonGetStarted" alt="Button Get Started">
+                    <img class="button-get-started-2" v-bind:src="buttonGetStarted" alt="Button Get Started">
+                </a>
+            </div>
+        <div class="features">
+            <div class="flex-container">
+                <div>
+                    <img v-bind:src="f1" alt="Feature-1" class="size">
+                </div>
+                <div>
+                    <img v-bind:src="f2" alt="Feature-2" class="size">
+                </div>
+                <div>
+                    <img v-bind:src="f3" alt="Feature-3" class="size">
+                </div>
+                <div>
+                    <img v-bind:src="f4" alt="Feature-4" class="size">
+                </div>
+                <div>
+                    <img v-bind:src="f5" alt="Feature-5" class="size">
+                </div>
+                <div>
+                    <img v-bind:src="f6" alt="Feature-6" class="size">
+                </div>
+            </div>
+        </div>
+        <div class="contacts">
+            <img v-bind:src="contacts" alt="Contacts" class="contact-info">
+            <a href="#">
+                 <img class="recall-button" v-bind:src="recallButton" alt="Recall button">
+            </a>
+            <img class="large-contacts" v-bind:src="largeContacts" alt="Large contacts"
+            v-on:mouseover="mouseOverContacts" v-on:mouseout="mouseOutContacts"
+            v-bind:class="{'large-contacts-active': isContactsActive}">
+        </div>
+        <div class="footer">
+            <div class="menu">
+                <img class="logo" v-bind:src="logo" alt="Logo">
+                <nav>
+                    <ul>
+                        <li class="items" v-for="item in menu">
+                            <a href="#" class="links">{{item}}</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <pre class="phrase">
+                It is a long established fact that a reader will be distracted
+                by the readable content of a page when looking at its
+                layout.
+            </pre>
+            <div class="box">
+                <p class="copyright">
+                    © Batumi Kart Club Copyright 2022, All rights reserved.
+                </p>
+                <table class="widgets">
+                    <tr>
+                        <td>
+                            <a href="#">
+                                <img v-bind:src="insta" alt="Insta">
+                            </a>
+                        </td>
+                        <td>
+                            <a href="#">
+                                <img v-bind:src="youtube" alt="Youtube">
+                            </a>
+                        </td>
+                        <td>
+                            <a href="#">
+                                <img v-bind:src="twitter" alt="Twitter">
+                            </a>
+                        </td>
+                        <td>
+                            <a href="#">
+                                <img v-bind:src="facebook" alt="Facebook">
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="vue_code.js"></script> 
+</body>
+</html>

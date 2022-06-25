@@ -1,0 +1,358 @@
+.header {
+    display: flex;
+    margin: 0px auto;
+    background-color: #03161E;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+}
+
+.logo {
+    position: relative;
+    left: 7%;
+    max-width: 100%;
+    width: 9%;
+    height: 100%;
+}
+
+.items {
+    display: inline-block;
+    padding-right: 24px;
+}
+
+.links {
+    color: white;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    text-decoration: none;
+}
+
+nav {
+    padding-right: 4%;
+    padding-top: 1.5%;
+    position: absolute;
+    left: 32%;
+}
+
+.first-item {
+    color: #00FFA3;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 26px;
+}
+
+.main-section {
+    display: block;
+    margin: 0px auto;
+    position: relative;
+}
+
+.main {
+    max-width: 100%;
+}
+
+.button-get-started {
+    display: block;
+    position: absolute;
+    top: 27%;
+    left: 37%;
+    width: 19%;
+    height: auto;
+}
+
+.button-get-started-2 {
+    display: block;
+    position: absolute;
+    top: 80%;
+    left: 40%;
+    width: 19%;
+    height: auto;
+}
+
+a:active img.button-get-started,
+a:active img.button-get-started-2 {
+    opacity: .5;
+}
+
+.features {
+    display: block;
+    background-color: #03161E;
+    filter: brightness(125%);
+}
+
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.size {
+    width: 95%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 7%;
+}
+
+.contacts {
+    position: relative;
+    max-width: 100%;
+}
+
+.contact-info {
+    max-width: 100%;
+}
+
+.large-contacts {
+    position: absolute;
+    top: 43%;
+    left: 5.5%;
+    width: 31%;
+}
+
+.large-contacts-active {
+    z-index: 3;
+    outline: 3px solid #00FFA3;
+    width: 40%;
+}
+
+.recall-button {
+    position: absolute;
+    top: 73%;
+    left: 6%;
+    width: 15%;
+    height: auto;
+}
+
+a:active img.recall-button {
+    opacity: .5;
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
+    outline: 3px solid deepskyblue;
+    width: 17%;
+}
+
+.footer {
+    background-color: #03161E;
+}
+
+.menu {
+    display: flex;
+    margin: 0px auto;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    margin-bottom: 2%;
+}
+
+.phrase {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    opacity: 0.6;
+}
+
+.box {
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 4%;
+    width: 100%;
+}
+
+.copyright {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #00FFA3;
+    margin-left: 4%;
+}
+
+.widgets {
+    position: absolute;
+    right: 10%;
+}
+
+@media (max-width: 1517px) {
+    nav {
+        max-width: 45%;
+        padding-top: 1%;
+    }
+    .large-contacts {
+        outline: 1px solid #00FFA3;
+    }
+    .large-contacts-active {
+        width: 60%;
+    }
+}
+
+@media (max-width: 1347px) {
+    .links {
+        font-size: 16px;
+    }
+    nav {
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 1107px) {
+    nav {
+        padding-right: 0px;
+        left: 16%;
+        max-width: 100%;
+    }
+    ul {
+        padding: 0px;
+    }
+    .logo {
+        width: 11%;
+        left: 3%;
+    }
+}
+
+@media (max-width: 990px) {
+    .logo {
+        width: 12%;
+    }
+    nav {
+        max-width: 60%;
+        left: 30%;
+        padding-top: .5%;
+    }
+    .button-get-started,
+    .button-get-started-2 {
+        width: 22%;
+    }
+    .recall-button {
+        width: 20%;
+    }
+    .menu {
+        margin-bottom: 4%;
+    }
+}
+
+@media (max-width: 765px) {
+    nav {
+        max-width: 72%;
+        left: 20%;
+    }
+    .links {
+        font-size: 15px;
+        font-weight: 550;
+        line-height: 16px;
+    }
+    .button-get-started,
+    .button-get-started-2 {
+        width: 26%;
+    }
+    .button-get-started {
+        top: 26%;
+    }
+    .button-get-started-2 {
+        top: 79%;
+    }
+    .recall-button {
+        width: 25%;
+    }
+    .logo {
+        width: 13%;
+    }
+    .widgets {
+        position: relative;
+        bottom: 35px;
+    }
+    .copyright {
+        margin-top: 50px;
+    }
+    .large-contacts-active {
+        width: 90%;
+    }
+}
+
+@media (max-width: 625px) {
+    .logo {
+        width: 16%;
+    }
+    .links {
+        font-size: 14px;
+        line-height: 13px;
+    }
+    nav {
+        max-width: 77%;
+    }
+    .button-get-started,
+    .button-get-started-2 {
+        width: 28%;
+    }
+    .recall-button {
+        width: 26%;
+        top: 72%;
+    }
+}
+
+@media (max-width: 575px) {
+    .button-get-started,
+    .button-get-started-2 {
+        width: 37%;
+    }
+    .button-get-started {
+        left: 33%;
+    }
+    .button-get-started-2 {
+        left: 36%;
+    }
+    .logo {
+        width: 29%;
+        left: 1%;
+    }
+    nav {
+        left: 31%;
+        max-width: 80%;
+    }
+    .recall-button {
+        width: 33%;
+        left: 4%;
+    }
+    .items {
+        padding-right: 30px;
+    }
+}
+
+@media (max-width: 479px) {
+    .logo {
+        width: 30%;
+        margin-bottom: 3vh;
+    }
+    nav {
+        left: 32%;
+        max-width: 67%;
+    }
+    .phrase {
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .button-get-started,
+    .button-get-started-2 {
+        width: 40%;
+    }
+    .button-get-started {
+        left: 31%;
+    }
+    .button-get-started-2 {
+        left: 34%;
+    }
+    .recall-button {
+        width: 36%;
+        left: 3%;
+    }
+}
