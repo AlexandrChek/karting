@@ -338,7 +338,7 @@ a:active img.recall-button {
     }
     nav {
         left: 32%;
-        max-width: 70%;
+        max-width: 80%;
     }
     .phrase {
         font-size: 14px;
@@ -361,5 +361,8 @@ a:active img.recall-button {
     .recall-button {
         width: 36%;
         left: 3%;
+    }
+    .items {
+        padding-right: 25px;
     }
 }
