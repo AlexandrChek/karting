@@ -1,8 +1,6 @@
 .header {
     display: flex;
-    margin: 0px auto;
     background-color: #03161E;
-    justify-content: space-between;
     width: 100%;
     height: auto;
 }
@@ -15,8 +13,21 @@
     height: 100%;
 }
 
+.horiz {
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+.vert {
+    display: none;
+    flex-direction: column;
+    list-style-type: none;
+    z-index: 2;
+}
+
 .items {
-    display: inline-block;
     padding-right: 24px;
 }
 
@@ -31,10 +42,10 @@
 }
 
 nav {
-    padding-right: 4%;
     padding-top: 1.5%;
     position: absolute;
     left: 32%;
+    display: flex;
 }
 
 .first-item {
@@ -42,6 +53,28 @@ nav {
     font-weight: 600;
     font-size: 22px;
     line-height: 26px;
+}
+
+.burger {
+    position: absolute;
+    right: 0%;
+    margin-top: 1%;
+    margin-right: 2%;
+    display: none;
+}
+
+.burger-lines {
+    color: #00FFA3;
+    background-color: #03161E;
+    font-weight: bold;
+    font-size: 27px;
+}
+
+.cross {
+    color: red;
+    background-color: #03161E;
+    font-size: 20px;
+    z-index: 3;
 }
 
 .main-section {
@@ -246,14 +279,23 @@ a:active img.recall-button {
 }
 
 @media (max-width: 765px) {
+    .horiz {
+        display: none;
+    }
+    .vert {
+        display: flex;
+    }
+    .burger {
+        display: flex;
+    }
     nav {
-        max-width: 72%;
-        left: 20%;
+        left: 75%;
+    }
+    .logo {
+        width: 15%;
     }
     .links {
-        font-size: 15px;
-        font-weight: 550;
-        line-height: 16px;
+        font-weight: 540;
     }
     .button-get-started,
     .button-get-started-2 {
@@ -268,9 +310,6 @@ a:active img.recall-button {
     .recall-button {
         width: 25%;
     }
-    .logo {
-        width: 13%;
-    }
     .widgets {
         position: relative;
         bottom: 35px;
@@ -284,20 +323,19 @@ a:active img.recall-button {
     .phrase {
         font-size: 15px;
         line-height: 18px;
-    }
-    
+    }  
 }
 
-@media (max-width: 625px) {
+@media (max-width: 635px) {
     .logo {
-        width: 16%;
-    }
-    .links {
-        font-size: 14px;
-        line-height: 13px;
+        width: 19%;
     }
     nav {
-        max-width: 77%;
+        left: 72%;
+    }
+    .burger {
+        margin-top: 2.5%;
+        margin-right: 3%;
     }
     .button-get-started,
     .button-get-started-2 {
@@ -321,33 +359,33 @@ a:active img.recall-button {
         left: 36%;
     }
     .logo {
-        width: 29%;
-        left: 1%;
+        width: 21%;
     }
     nav {
-        left: 31%;
-        max-width: 80%;
+        left: 68%;
+    }
+    .vert {
+        background-color: black;
+    }
+    .links {
+        font-size: 15px;
+        text-decoration: underline;
+    }
+    .items {
+        line-height: 1.2;
     }
     .recall-button {
         width: 33%;
         left: 4%;
     }
-    .items {
-        padding-right: 30px;
-    }
-    .links {
-        font-size: 12px;
-    }
 }
 
 @media (max-width: 479px) {
     .logo {
-        width: 30%;
-        margin-bottom: 3vh;
+        width: 27%;
     }
     nav {
-        left: 32%;
-        max-width: 80%;
+        left: 58%;
     }
     .phrase {
         font-size: 12px;
@@ -370,8 +408,5 @@ a:active img.recall-button {
     .recall-button {
         width: 36%;
         left: 3%;
-    }
-    .items {
-        padding-right: 6.3px;
     }
 }

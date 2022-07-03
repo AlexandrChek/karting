@@ -14,12 +14,20 @@
         <div class="header">
             <img class="logo" v-bind:src="logo" alt="Logo">
             <nav>
-                <ul>
+                <ul class="horiz" v-bind:class="{'vert': isMenuActive}">
                     <li class="items" v-for="(item, index) in menu">
                         <a href="#" class="links" v-bind:class="{'first-item': index === 0}">{{item}}</a>
                     </li>
                 </ul>
             </nav>
+            <div class="burger">
+                <div v-if="burger" class="burger-lines">
+                    <p v-on:click="openMenu">&#9776;</p>
+                </div>
+                <div v-else class="cross">
+                    <p v-on:click="closeMenu">&#10060;</p>
+                </div>
+            </div>
         </div>
             <div class="main-section">
                 <img class="main" v-bind:src="main" alt="Main info">
@@ -63,12 +71,20 @@
             <div class="menu">
                 <img class="logo" v-bind:src="logo" alt="Logo">
                 <nav>
-                    <ul>
+                    <ul class="horiz" v-bind:class="{'vert': isMenuActive}">
                         <li class="items" v-for="item in menu">
                             <a href="#" class="links">{{item}}</a>
                         </li>
                     </ul>
                 </nav>
+                <div class="burger">
+                    <div v-if="burger" class="burger-lines">
+                        <p v-on:click="openMenu">&#9776;</p>
+                    </div>
+                    <div v-else class="cross">
+                        <p v-on:click="closeMenu">&#10060;</p>
+                    </div>
+                </div>
             </div>
             <pre class="phrase">
             It is a long established fact that a reader will be distracted

@@ -3,6 +3,8 @@ let app = new Vue({
     data: {
         menu: ['Цены/прокат', 'Акции', 'Аренда', 'Трасса', 'Соревнования', 'Школа', 'Гоночная команда', 'Продажа картингов'],
         logo: 'logo.png',
+        burger: true,
+        isMenuActive: false,
         main: 'main.png',
         buttonGetStarted: 'button_get_started.png',
         f1: 'feature1.png',
@@ -29,6 +31,18 @@ let app = new Vue({
         mouseOutContacts: function (event) {
             if (event) {
                 this.isContactsActive = false;
+            }
+        },
+        openMenu: function (event) {
+            if (event) {
+                this.burger = false;
+                this.isMenuActive = true;
+            }
+        },
+        closeMenu: function (event) {
+            if (event) {
+                this.burger = true;
+                this.isMenuActive = false;
             }
         }
     }
