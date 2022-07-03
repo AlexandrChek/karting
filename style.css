@@ -217,6 +217,10 @@ a:active img.recall-button {
     right: 10%;
 }
 
+.insta:active, .youtube:active, .twitter:active, .facebook:active {
+    outline: 1px solid #00FFA3;
+}
+
 @media (max-width: 1517px) {
     nav {
         max-width: 45%;
@@ -370,9 +374,6 @@ a:active img.recall-button {
     .links {
         font-size: 15px;
         text-decoration: underline;
-    }
-    .items {
-        line-height: 1.2;
     }
     .recall-button {
         width: 33%;
